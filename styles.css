@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: rgb(50, 50, 50);
+  background-color: turquoise;
+  scroll-behavior: smooth;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container h1 {
+  padding: 17vh 1vw 14vh 1vw;
+  display: block;
+  font-size: 80px;
+  text-align: center;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  margin: auto;
+  border-top: 2px solid teal;
+  justify-content: center;
+}
+
+.table > div {
+  font-size: 30px;
+  padding: 4vh 2vw;
+}
+
+.table > div:nth-child(-n+3) {
+  border-bottom: 2px solid teal;
+  background-color: snow;
+}
+
+.table > div:nth-child(4), .table > div:nth-child(5), .table > div:nth-child(6) {
+  border-bottom: 2px solid teal;
+  background-color: #e74343;
+  color: #fff;
+}
+
+.table > div:nth-child(7),
+.table > div:nth-child(8),
+.table > div:nth-child(9),
+.table > div:nth-child(10),
+.table > div:nth-child(11),
+.table > div:nth-child(12){
+  background-color: rgba(50, 50, 200, 0.5);
+}
+
+.table-mobile{
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin: auto;
+  border-top: 2px solid teal;
+}
+
+.table-mobile > div {
+  font-size: 30px;
+  padding: 4vh 2vw;
+}
+
+.table-mobile > div:nth-child(-n+3){
+  background-color: #fff;
+}
+
+.table-mobile > div:nth-child(4), .table-mobile > div:nth-child(5), .table-mobile > div:nth-child(6){
+  background-color: #e74343;
+  color: #fff;
+}
+
+.table-mobile > div > div{
+  background-color: transparent;
+}
+
+.total-confirmed-mobile, .total-deaths-mobile, .total-recovered-mobile{
+  color: #fff;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22vh;
+}
+
+.button button {
+  font-size: 25px;
+  outline: none;
+  background-color: blue;
+  border: none;
+  border-radius: 2em;
+  color: #fff;
+  cursor: pointer;
+  padding: 2vh 2vw;
+  transition: all 0.5s;
+}
+
+.button button:hover{
+    background-color: rgba(0, 0, 255, .8);
+    transform: scale(1.1);
+}
+
+.button i {
+  background-color: transparent;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.countries {
+  margin-top: 5vh;
+}
+
+.countries > div {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.countries > div:first-child {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #000;
+}
+
+
+.countries div:nth-child(even) > p {
+  background-color: #f1f1f1;
+}
+
+.countries div:nth-child(even) {
+  background: #f1f1f1;
+}
+
+.countries p:first-child {
+  font-weight: bold;
+  padding-left: 1em;
+  align-self: center;
+}
+
+
+@media screen and (max-width: 1065px) {
+  .table-mobile{
+    display: grid;
+  }
+
+  .table{
+    display: none;
+  }
+}
+
+@media screen and (max-width:800px){
+  .container h1{
+    font-size: 60px;
+    padding: 14vh 1vw 12vh 1vw;
+  }
+  
+  .table-mobile > div{
+    font-size: 25px;
+  }
+
+  .button{
+    font-size: 22px;
+  }
+
+}
+
+@media screen and (max-width:700px){
+  .container h1{
+    margin: auto;
+  }
+
+  .table-mobile{
+    margin: auto;
+  }
+
+  .countries{
+    width: 700px;
+  }
+}

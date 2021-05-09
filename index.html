@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/62ea397d3a.js"
+      crossorigin="annonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Covid19 Live Data</h1>
+      <div class="table">
+        <div>New Confirmed</div>
+        <div>New<br />Deaths</div>
+        <div>New Recovered</div>
+        <div>Total Confirmed</div>
+        <div>Total<br />Deaths</div>
+        <div>Total Recovered</div>
+        <div class="new-confirmed"></div>
+        <div class="new-deaths"></div>
+        <div class="new-recovered"></div>
+        <div class="total-confirmed"></div>
+        <div class="total-deaths"></div>
+        <div class="total-recovered"></div>
+      </div>
+
+      <div class="table-mobile">
+        <div>
+          New Confirmed
+          <div class="new-confirmed-mobile"></div>
+        </div>
+        <div>
+          New Deaths
+          <div class="new-deaths-mobile"></div>
+        </div>
+        <div>
+          New Recovered
+          <div class="new-recovered-mobile"></div>
+        </div>
+        <div>
+          Total Confirmed
+          <div class="total-confirmed-mobile"></div>
+        </div>
+        <div>
+          Total Deaths
+          <div class="total-deaths-mobile"></div>
+        </div>
+        <div>
+          Total Recovered
+          <div class="total-recovered-mobile"></div>
+        </div>
+      </div>
+      <div class="button">
+        <a href="#countries">
+          <button>
+            See all countries stadistics<i class="fas fa-arrow-down"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div id="countries" class="countries">
+      <div>
+        <p><b>Country</b></p>
+        <p><b>New Confirmed</b></p>
+        <p><b>New Deaths</b></p>
+        <p><b>New Recovered</b></p>
+        <p><b>Total Confirmed</b></p>
+        <p><b>Total Deaths</b></p>
+        <p><b>Total Recovered</b></p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
